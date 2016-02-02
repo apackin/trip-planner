@@ -1,0 +1,91 @@
+#map-canvas {
+   height: 500px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+
+* {
+   font-family: 'Dosis', sans-serif;
+}
+
+body {
+   background-image: url('../bg_africa.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.dropdown {
+   margin: 0 20px;
+   font-size: 130%;
+
+}
+
+.navbar-nav {
+   margin-left: 60px;
+}
+
+.navbar-brand {
+   font-size: 200%;
+   font-weight: bold;
+}
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+.footer {
+  padding-top: 25px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.spacer {
+   height: 70px;
+   content: "";
+   clear: both;
+}
+
+.jumbotron {
+   padding-left: 10px !important;
+   padding-right: 10px !important;
+   padding-top: 10px !important;
+   padding-bottom: 10px !important;
+}
+
+#main-panel {
+   height: 520px;
+   box-sizing: border-box;
+
+}
+
+#main-title {
+   text-align: center;
+   font-size: 250%;
+}
+
+
+.panel {
+   background-color: black;
+   color: #9d9d9d;
+}
+
+.panel-body {
+
+}
+
+.panel-title .panel-heading {
+   color: #9d9d9d;
+   background-color: black;
+}
+
+.subpanel {
+   background-color: #9d9d9d;
+}
+
+@media screen and (max-width: 1000px) {
+   #panel-specific {
+      margin-top: 0;
+   }
+}

@@ -7,13 +7,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sticky Footer Navbar Template for Bootstrap</title>
+    <title>Trip Planner XTREME!</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/stylesheets/style.css" rel="stylesheet">
+    <link href="/public/css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+
 
   </head>
 
@@ -32,10 +34,10 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Trip Planner Xtreme!</a>  
+            <a class="navbar-brand" href="/">Trip Planner Xtreme!</a>
           </div>
           {% block navbar %}Welcome to Trip Planner Xtreme!{% endblock %}
-         
+
         </div>
       </div>
 
@@ -43,12 +45,12 @@
       <div class="container">
         {% block index %}Welcome to Trip Planner Xtreme!{% endblock %}
       </div> <!-- end container -->
-      
+
     </div>
 
     <div id="footer">
       <div class="container">
-        <p class="text-muted">Trip Planner Xtreme!, Fullstack Academy</p>
+        <p class="text-muted">Trip Planner Xtreme! by Assaf & Mike, Fullstack Academy</p>
       </div>
     </div>
 
@@ -58,6 +60,9 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/jquery/jquery.min.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCInZ_HbVAnfBdbm9yw3pZs8jJylkeWfEM&sensor=true"></script>
+    <script src="/public/js/maps.js"></script>
+
   </body>
 
 </html>
