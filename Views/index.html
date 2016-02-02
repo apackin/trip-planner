@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block navbar %}
+
+ <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a href="#Hotels" class="dropdown-toggle" data-toggle="dropdown">Hotels<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li class="list-group-item-info"><h4>Add To Planner: EDIT THIS</h4></li>
+          {% for hotel in hotels %}
+          <li><a href="#">{{hotel.name}}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+       <li class="dropdown">
+        <a href="#Restaurants" class="dropdown-toggle" data-toggle="dropdown">Restaurants<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li>Add To Planner:</li>
+          {% for restaurant in restaurants %}
+          <li><a href="#">{{restaurant.name}}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#Activites" class="dropdown-toggle" data-toggle="dropdown">Activites<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li>Add To Planner:</li>
+         {% for activity in activities %}
+          <li><a href="#">{{activity.name}}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+        </ul>
+      </li>
+    </ul>
+</div><!--/.nav-collapse -->
+
+{% endblock %}
+
+
+
+
+{% block index %}
+  
+    <div class="container">
+      <div class="clearfix" >
+      <div class="jumbotron">
+        <h1>Jumbotron heading</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+      </div>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2015 Company, Inc.</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+{% endblock %}
