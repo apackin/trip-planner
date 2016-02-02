@@ -6,28 +6,28 @@
     <ul class="nav navbar-nav">
       <li class="dropdown">
         <a href="#Hotels" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-home"></span>&nbsp; Hotels &nbsp;<b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li class="list-group-item-info"><h4>Add To Planner: EDIT THIS</h4></li>
+        <ul class="dropdown-menu list-group-item-info">
+          <li><h4>&nbsp; Add To Planner:</h4></li>
           {% for hotel in hotels %}
-          <li><a href="#">{{hotel.name}}</a></li>
+          <li><a href="#{{hotel.name}}">{{hotel.name}}</a></li>
           {% endfor %}
         </ul>
       </li>
        <li class="dropdown">
         <a href="#Restaurants" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-glass"></span>&nbsp; Restaurants &nbsp;<b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li>Add To Planner:</li>
+        <ul class="dropdown-menu list-group-item-info">
+          <li><h4>&nbsp; Add To Planner:</h4></li>
           {% for restaurant in restaurants %}
-          <li><a href="#">{{restaurant.name}}</a></li>
+          <li><a href="#{{restaurant.name}}">{{restaurant.name}}</a></li>
           {% endfor %}
         </ul>
       </li>
       <li class="dropdown">
         <a href="#Activities" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-music"></span>&nbsp; Activities &nbsp;<b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li>Add To Planner:</li>
+        <ul class="dropdown-menu list-group-item-info">
+          <li><h4>&nbsp; Add To Planner:</h4></li>
          {% for activity in activities %}
-          <li><a href="#">{{activity.name}}</a></li>
+          <li><a href="#{{activity.name}}">{{activity.name}}</a></li>
           {% endfor %}
         </ul>
       </li>
@@ -48,7 +48,7 @@
 
       <div class="col-lg-4 col-sm-12">
       <div id="main-panel" class="panel panel-default">
-        <div class="panel-heading">
+        <div id="main-heading"class="panel-heading">
 
            <h3 id="main-title" class='panel-title'>
              <button type="button" class="btn btn-default btn-lg" style="float:left">
@@ -66,7 +66,7 @@
             <h4 class='panel-title'><span class="glyphicon glyphicon-home"></span>&nbsp; Hotels</h4>
          </div>
          <div class="panel-body">
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <li>The Ritz-Carlton New York, Battery Park <span class="glyphicon glyphicon-minus"></span></li>
        </div>
     </div>
              <div class="panel panel-default subpanel">
@@ -75,7 +75,8 @@
               <h4 class='panel-title'><span class="glyphicon glyphicon-glass"></span>&nbsp; Restaurants</h4>
           </div>
           <div class="panel-body">
-           <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+           <li>Tamarind <span class="glyphicon glyphicon-minus"></span></li>
+           <li>Hop Lee Restaurant <span class="glyphicon glyphicon-minus"></span></li>
         </div>
          </div>
          <div class="panel panel-default subpanel">
@@ -84,7 +85,9 @@
           <h4 class='panel-title'><span class="glyphicon glyphicon-music"></span>&nbsp; Activities</h4>
        </div>
        <div class="panel-body">
-        <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+        <li>Ground Zero <span class="glyphicon glyphicon-minus"></span></li>
+        <li>National September 11th Memorial & Museum <span class="glyphicon glyphicon-minus"></span></li>
+        <li>Battery Park <span class="glyphicon glyphicon-minus"></span></li>
      </div>
     </div>
         </div>
